@@ -37,6 +37,9 @@ func TestHealthService(t *testing.T) {
 	}
 
 	db, err := db.NewDb(config)
+	if err != nil {
+		t.Fatal(err)
+	}
 	defer testutils.FindTestDbAndRemove("test.db")
 
 	healthService := HealthService{
