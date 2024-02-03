@@ -5,6 +5,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
+	testutils "github.com/subhroacharjee/appname/utils/test_utils"
 	"go.uber.org/zap"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
@@ -21,6 +22,8 @@ func TestHealthService(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
+
+	defer testutils.FindTestDbAndRemove("test.db")
 
 	healthService := HealthService{
 		Logger: logger,
