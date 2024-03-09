@@ -4,7 +4,8 @@ go 1.21.1
 
 require (
 	github.com/gin-gonic/gin v1.9.1
-	gorm.io/gorm v1.25.5
+	github.com/stretchr/testify v1.8.4
+	gorm.io/gorm v1.25.7-0.20240204074919-46816ad31dde
 )
 
 require (
@@ -18,7 +19,6 @@ require (
 	github.com/mattn/go-sqlite3 v1.14.17 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/stretchr/objx v0.5.0 // indirect
-	github.com/stretchr/testify v1.8.4 // indirect
 )
 
 require (
@@ -49,6 +49,6 @@ require (
 	golang.org/x/text v0.13.0 // indirect
 	google.golang.org/protobuf v1.30.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	gorm.io/driver/postgres v1.5.4
+	gorm.io/driver/postgres v1.5.7
 	gorm.io/driver/sqlite v1.5.4
 )
