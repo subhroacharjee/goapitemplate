@@ -1,9 +1,10 @@
 module github.com/subhroacharjee/appname
 
-go 1.21.1
+go 1.22.1
 
 require (
 	github.com/gin-gonic/gin v1.9.1
+	github.com/stretchr/testify v1.8.4
 	gorm.io/gorm v1.25.5
 )
 
@@ -18,7 +19,6 @@ require (
 	github.com/mattn/go-sqlite3 v1.14.17 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/stretchr/objx v0.5.0 // indirect
-	github.com/stretchr/testify v1.8.4 // indirect
 )
 
 require (
